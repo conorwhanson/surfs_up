@@ -46,12 +46,11 @@ def welcome():
 @app.route('/api/v1.0/precipitation')
 # get precipitation data, jsonify it to display on webpage
 def precipitation():
-    # session = Session(engine)
     prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
     precipitation = app.session.query(Measurement.date, Measurement.prcp).\
         filter(Measurement.date >= prev_year).all()
     precip = {date: prcp for date,prcp in precipitation}
-    # session.close()
+
     return jsonify(precip)
 
 @app.route('/api/v1.0/stations')
@@ -59,6 +58,7 @@ def precipitation():
 def stations():
     results = app.session.query(Station.station).all()
     stations = list(np.ravel(results))
+
     return jsonify(stations=stations)
 
 @app.route('/api/v1.0/tobs')
@@ -69,6 +69,7 @@ def monthly_temp():
     filter(Measurement.station == 'USC00519281').\
     filter(Measurement.date >= prev_year).all()
     temps = list(np.ravel(results))
+    
     return jsonify(temps=temps)
 
 # final route will be able to run statistical analysis based on user input dates in url
