@@ -16,4 +16,3 @@ A few observations may be made from the weather data collected:
 swing on either side of the average is quite consistent, with both the positive and negative swing 10°F from 
 the average. June temperatures are relatively stable and comfortable with no major swings.
 
-![June_temps](https://github.com/conorwhanson/surfs_up/blob/main/resources/June_head_and_stats.png)
