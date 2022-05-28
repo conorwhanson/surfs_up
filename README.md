@@ -29,4 +29,12 @@ swing is into temperatures that would likely affect a person's desire to eat ice
 
 ## Summary
 
-Based on the above results, I believe we would expect to see a high volume of ice cream sales in June 
+Based on the above results I would expect to see a high volume of ice cream sales that peaks in or around June,
+with sales dipping in the winter months. However, more data is needed beyond temperature. A query to pull the 
+precipitation data would be needed, as even hot days can have rain, which would perhaps affect ice cream sales.
+A precipitation query below shows some basic statistics. 
+
+![Precipitation_stats](https://github.com/conorwhanson/surfs_up/blob/main/resources/precipitation.png)
+
+Average rainfall is less than 2/10ths of an inch, with the majority of data reporting very low precipitation
+overall. However, there are some significant outliers in the data; particularly
