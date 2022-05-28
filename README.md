@@ -36,5 +36,11 @@ A precipitation query below shows some basic statistics.
 
 ![Precipitation_stats](https://github.com/conorwhanson/surfs_up/blob/main/resources/precipitation.png)
 
-Average rainfall is less than 2/10ths of an inch, with the majority of data reporting very low precipitation
-overall. However, there are some significant outliers in the data; particularly
+Average rainfall is less than 2/10ths of an inch, with the majority of data indicating very low precipitation
+overall. However, there are some significant outliers in the data; in particular a large precipitation reading
+is skewing the data to the right (see graph below). This may perhaps indicate a significant storm or storms that 
+periodically come through the area. These kinds of weather occurences should be taken into account when 
+anticipating ice cream sales throughout the year. A further query that displays where in the year these
+precipitation readings occur would help anticipate how to respond to or plan for such weather.
+
+![Overall_precip_graph](https://github.com/conorwhanson/surfs_up/blob/main/resources/overall_precipitation.png)
